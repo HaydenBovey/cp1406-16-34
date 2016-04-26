@@ -3,10 +3,15 @@ html{
 }
 
 body {
-    background-image: url("new-BRO-background-big.jpeg");
-    background-color: blue;
-    background-attachment: fixed;
+	background-image: url("new-BRO-background-big.jpeg");
+	background-color: blue;
+	color: #FCF8F8;
+    /*background-attachment: fixed;*/
 }
+nav {
+	text-align: center;
+}
+
 
 
 
@@ -38,21 +43,18 @@ clear: all;
 h4 {
 font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 font-size: 250%;
-float: left;
 margin-right: 3%;
 margin-bottom: 0%;
 color: white;
-margin-left: 20%;
+margin-left: 0%;
 }
 h5 {
 font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 font-size: 200%;
-float: left;
-margin-right: 3%;
 color: white;
-margin-left: 20%;
+margin-left: 0%;
 margin-top: 0%;
-margin-bottom: 5%;
+margin-bottom: 0%;
 }
 
 text{
@@ -62,9 +64,12 @@ text{
 }
 .address {
 	font-family: helvetica, arial, sans-serif;
-	margin-left: 1%;
+	margin-left: 10%;
+	margin-top: -2%;
+	margin-bottom: 3%;
+	padding: 0%;
 	color: white;
-	align: centre;
+	width: 70%;
 }
 .picture2 {
 /*border: 2em solid red;*/
@@ -79,13 +84,18 @@ font-size: 150%;
 color: yellow;
 text-align: top;
 }
-
+legend {
+	font-size: 100%;
+	color: white;
+}
 .wrapper {
-width: 90%;
-margin: 0 auto 0 auto;
+width: 60%;
+margin-left: 10%;
+font-family: helvetica, arial, sans-serif;
+color: white;
 }
 form {
-width: 400px;
+width: 60%;
 }
 form div {
 float: left;
@@ -100,5 +110,19 @@ form textarea, form input:not([type="submit"]) {
 float: right;
 width: 260px;
 }
-I
+fieldset:hover {
+background-color: rgba(126,208,214,0.5);
+}
+form input[type="text"]:hover {
+background-color: rgba(126,208,214,0.5);
+}
+form input[type="email"]:hover {
+background-color: rgba(126,208,214,0.5);
+}
+form input[type="tel"]:hover {
+background-color: rgba(126,208,214,0.5);
+}
+form input[type="submit"]:hover {
+background-color: rgba(126,208,214,0.5);
+}
 {/style}

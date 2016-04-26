@@ -7,31 +7,46 @@
 		<link  rel="stylesheet" type="text/css" href="styles.css"/> 
 </head>
 <body>
-	<h4>Barrier Reef Orchestra Membership Form</h4>
-	<h5>North Queensland Ensembles Inc.</h5>
 	<div class="address">
-		<p>PO Box 576, Townsville  4810</p>
-		<p>tel. 07 4722 2789 email brotownsville@gmail.com</p>
-		<p>A.B.N. 73 365 249 138</p>
+		<h4>Barrier Reef Orchestra Membership Form</h4>
+		<h5>North Queensland Ensembles Inc.</h5>
+		<p>Address: PO Box 576, Townsville  4810<br>tel. 07 4722 2789<br>email brotownsville@gmail.com<br>A.B.N. 73 365 249 138</p>
+		<p>North Queensland Ensembles Inc. is the administration body of the Barrier Reef Orchestra. By becoming a member you are supporting Townsville’s Community Orchestra which was formed in 2000.
+</p>
 	</div>
 	
 	<div class="wrapper">
 		<form method="post" action="/contact" id="contact-form">
-		<div>
-			<label for="title">Title</label>
-			<input type="text" name="title" id="title" required="required" />
+		<p class="help">Please complete the form to register. Required fields are indicated by a <em>*</em>.</p>
+		<fieldset>
+		<legend>Title <em>*</em></legend>
+		<p>
+			<input type="radio" id="Mr" name="title"><label for="Mr" class="label-radio">Mr</label>
+			<input type="radio" id="Mrs" name="title">
+			<label for="Mrs" class="label-radio">Mrs</label>
+			<input type="radio" id="Miss" name="title">
+			<label for="Miss" class="label-radio">Miss</label>
+			<input type="radio" id="Ms" name="title">
+			<label for="Ms" class="label-radio">Ms</label>
+			<input type="radio" id="Dr" name="title">
+			<label for="Dr" class="label-radio">Dr</label>
+		</p>
+	</fieldset>
+		<div><br>
+			<label for="fName">First Name <em>*</em></label>
+			<input type="text" name="fName" id="fName" required="required" placeholder="e.g. Fred" />
 		</div>
 		<div>
-			<label for="fName">First Name</label>
-			<input type="text" name="fName" id="fName" required="required" />
+			<label for="sName">Surname <em>*</em></label>
+			<input type="text" name="sName" id="sName" required="required" placeholder="e.g. Flintstone" />
 		</div>
 		<div>
-			<label for="sName">Surname</label>
-			<input type="text" name="sName" id="sName" required="required" />
+			<label for="fEmail">Email address <em>*</em></label>
+			<input type="email" name="fEmail" id="fEmail" placeholder="e.g. fred@rubbleindustries.com.au"/>
 		</div>
 		<div>
-			<label for="fEmail">Email address</label>
-			<input type="text" name="fEmail" id="fEmail" />
+			<label for="phoneNo">Phone Number <em>*</em></label>
+			<input type="tel" name="phoneNo" id="phoneNo" required="required" placeholder="e.g. 0413123456"/>
 		</div>
 		<div>
 			<label for="fQuestion">Question / Comments</label>
