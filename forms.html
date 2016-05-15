@@ -4,35 +4,38 @@
 <head>
 	<title>Forms</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link  rel="stylesheet" type="text/css" href="styles.css"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link  rel="stylesheet" type="text/css" href="styles.css"/> 
 </head>
 <body>
+	<div class = picture1><img src="images/logo.jpeg"  alt="BRO logo"/></div>
+	<h4>Barrier Reef Orchestra Membership Form</h4>
+	<h5>North Queensland Ensembles Inc.</h5>
+	<ul class = "nav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aboutUs.html">About Us</a></li>
+		<li><a href="conductors.html">Conductors</a></li>
+		<li><a href="performers.html">Performers</a></li>
+		<li><a href="sponsors.html">Sponsers and Supporters</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+	</ul></br></br>
 	<div class="address">
-		<h4>Barrier Reef Orchestra Membership Form</h4>
-		<h5>North Queensland Ensembles Inc.</h5>
-		<p>Address: PO Box 576, Townsville  4810<br>tel. 07 4722 2789<br>email brotownsville@gmail.com<br>A.B.N. 73 365 249 138</p>
-		<p>North Queensland Ensembles Inc. is the administration body of the Barrier Reef Orchestra. By becoming a member you are supporting Townsville’s Community Orchestra which was formed in 2000.
-</p>
+		
+		<br>
+		<p>A.B.N. 73 365 249 138<br>Address: PO Box 576, Townsville  4810<br>tel. 07 4722 2789<br>email <a href="mailto:brotownsville@gmail.com">brotownsville@gmail.com</a></p>
+		<p>North Queensland Ensembles Inc. is the administration body of the Barrier Reef Orchestra. By becoming a member you are supporting Townsville’s Community Orchestra which was formed in 2000.</p>
 	</div>
 	
-	<div class="wrapper">
+<hr>
+	
+	<div class="form_wrapper">
 		<form method="post" action="/contact" id="contact-form">
-		<p class="help">Please complete the form to register. Required fields are indicated by a <em>*</em>.</p>
-		<fieldset>
-		<legend>Title <em>*</em></legend>
-		<p>
-			<input type="radio" id="Mr" name="title"><label for="Mr" class="label-radio">Mr</label>
-			<input type="radio" id="Mrs" name="title">
-			<label for="Mrs" class="label-radio">Mrs</label>
-			<input type="radio" id="Miss" name="title">
-			<label for="Miss" class="label-radio">Miss</label>
-			<input type="radio" id="Ms" name="title">
-			<label for="Ms" class="label-radio">Ms</label>
-			<input type="radio" id="Dr" name="title">
-			<label for="Dr" class="label-radio">Dr</label>
-		</p>
-	</fieldset>
+		<p class="help">Please complete the form to register as a BRO member or to request registration as a player.<br>Required fields are indicated by a <em>*</em>.</p>
 		<div><br>
+			<label for="title">Title <em>*</em></label>
+			<input type="text" name="title" id="title" required="required" placeholder="e.g. Mr" />
+		</div>
+		<div>
 			<label for="fName">First Name <em>*</em></label>
 			<input type="text" name="fName" id="fName" required="required" placeholder="e.g. Fred" />
 		</div>
@@ -45,8 +48,8 @@
 			<input type="email" name="fEmail" id="fEmail" placeholder="e.g. fred@rubbleindustries.com.au"/>
 		</div>
 		<div>
-			<label for="phoneNo">Phone Number <em>*</em></label>
-			<input type="tel" name="phoneNo" id="phoneNo" required="required" placeholder="e.g. 0413123456"/>
+			<label for="phoneNo">Phone Number</label>
+			<input type="tel" name="phoneNo" id="phoneNo" placeholder="e.g. 0413123456"/>
 		</div>
 		<div>
 			<label for="fQuestion">Question / Comments</label>
