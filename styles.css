@@ -1,7 +1,12 @@
 <style type="text/css">
+html{
+	
+}
 
-
-#wrapper{width:70%;}
+#wrapper{width:100%;}
+#wrapper2{width:90%;}
+#text1{width:75%;float:left; left:20%;}
+#photo1{width:25%; float:right;}
 
 body {
 	background-image: url("old-BRO-background1.jpeg");
@@ -55,6 +60,7 @@ color: yellow;
 }
 
 #footer{clear:both; width:100%; float:right; background-color:yellow; position:fixed; bottom:0;}
+#footer1{clear:both; width:100%; float:left; background-color:yellow; bottom:0;}
 
 .footer{padding-left:1em; font-family:verdana; color:black;}
 
@@ -64,7 +70,7 @@ font-size: 500%;
 padding: -10%;
 margin: 0%;
 color: white;
-margin-left: 10%;
+margin-left: 20%;
 }
 h2 {
 font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
@@ -135,12 +141,6 @@ margin-right: 4%;
 margin-top: 10%;
 clear: all;
 }
-.conductorPhoto {
-float: left;
-margin-left: 0%;
-margin-top: 1.5%;
-margin-right: 1%;
-}
 .caption {
 font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 font-size: 150%;
@@ -166,7 +166,7 @@ text-align: top;
 	margin-left: 45%;
 	margin-top: 1%;
 	margin-bottom: 3%;
-	padding-right: 3%;
+	padding-right: 2%;
 	color: white;
 	width: 50%;
 	float: top;
@@ -186,17 +186,8 @@ font-size: 120%;
 font-family: helvetica, arial, sans-serif;
 color: white;
 }
-.form_wrapper {					<!--Below relates to the Forms-->
-width: 80%;
-margin: 20px auto 40px auto;
-}
-.submit  {
-width: 100px;
-float: right;
-}
-form {				
-width: 400px;
-margin: 0 0 0 10em;
+form {				<!--Below relates to the Forms-->
+width: 60%;
 }
 form div {
 float: left;
@@ -207,13 +198,13 @@ form label {
 float: left;
 width: 120px;
 }
-form textarea, form input {  <!--:not([type="submit"])-->
+form textarea, form input:not([type="submit"]) {
 float: right;
 width: 260px;
 }
-<!--fieldset:hover {
+fieldset:hover {
 background-color: rgba(126,208,214,0.5);
-}-->
+}
 form input[type="text"]:hover {
 background-color: rgba(126,208,214,0.5);
 }
@@ -225,13 +216,5 @@ background-color: rgba(126,208,214,0.5);
 }
 form input[type="submit"]:hover {
 background-color: rgba(126,208,214,0.5);
-}
-form input[type="submit"]{
-float: right;
-width: 60px;
-margin-right: 13px;
-}
-form div.submit {
-text-align: right;
 }
 {/style}
