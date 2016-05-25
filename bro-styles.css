@@ -4,14 +4,7 @@
 #wrapper{width:100%;}
 #wrapper2{width:90%;}
 #text1{width:75%; float:left; left:20%;}
-.wrapper {
-width: 90%;
-margin-left: auto;
-margin-right: auto;
-font-size: 120%;
-font-family: helvetica, arial, sans-serif;
-color: white;
-}
+#photo1{width:25%; float:right;}
 
 body {
 	background-image: url("old-BRO-background1.jpeg");
@@ -20,9 +13,10 @@ body {
 	background-size: cover;
 	<!--background image covers the entire background no matter what the screen size-->
     <!--background-attachment: fixed;-->
+	
 }
 .nav {
-	list-style: none;   <!--removes list bullets, margins and padding-->
+	list-style:none;   <!--removes list bullets, margins and padding-->
 	margin: 20%;
 }
 .nav li{
@@ -41,6 +35,10 @@ body {
 	font-weight: bold;
 	margin: 0 0 0.2em 0;
 	border-radius: 3px;
+	/*moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);
+	-moz-box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);*/
 	box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5); 
 }
 .nav li a:hover {				/*makes mousing over navigation box highlight it*/
@@ -50,13 +48,7 @@ body {
 .header {
 	width : 100%;
 }
-.conductor {
-font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
-font-size: 120%;
-margin-right: 3%;
-margin-bottom: 0%;
-color: yellow;
-}
+
 .conductor1 {
 font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 font-size: 200%;
@@ -83,18 +75,22 @@ h2 {
 	font-size: 200%;
 	margin-right: 0%;
 	color: #FFEF1D;
-	text-align: center;
+border: 
+; 	text-align: center;
 }
 h3 {
 	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 	font-size: 250%;
-	margin-bottom: 2%;
+	margin-left: 20%;
+	margin-bottom: 5%;
 	color: White;
+	clear: all;
+	text-align: center;
 }
 h4 {
 	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 	font-size: 250%;
-	margin-left: 3%;
+	margin-left: 15%;
 	margin-top: 0%;
 	margin-bottom: 0%;
 	color: White;
@@ -103,7 +99,7 @@ h4 {
 h5 {
 	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 	font-size: 250%;
-	margin-left: 3%;
+	margin-left: 15%;
 	margin-top: 0%;
 	margin-bottom: 0%;
 	color: white;
@@ -112,14 +108,11 @@ h5 {
 h6 {
 	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 	font-size: 250%;
-	margin-left: 5%;
+	margin-left: 15%;
 	margin-top: 0%;
-	margin-bottom: 2%;
-	color: white;
-	
-}
-.names {
-		color: Gold;
+	margin-bottom: 0%;
+	color: yellow;
+	left: 142px;
 }
 p{
 	font-family: helvetica, arial, sans-serif;
@@ -135,47 +128,16 @@ p{
 	color: white;
 	width: 70%;
 }
-#photo1{width:25%; float:right;}
 .picture1 {
 float: left;
 margin-top: 0%;
+
 }
 .picture2 {
-	float: left;
-	margin-right: 4%;
-	margin-top: 0%;
-	clear: all;
-	border: thick solid #FFAE00;
-}
-.tickets {
-	float: left;
-	margin-right: 2%;
-	margin-top: 0%;
-	padding: 2%;
-	clear: all;
-	border: thick solid gold;
-}
-.ticket {
-	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
-	font-size: 200%;
-	color: #FFFFFF;
-	margin-left: 5%;
-	padding: 2%;
-	text-align: center;
-}
-.picture3 {
-		float: right;
-}
-.picture4 {
-	float: left;
-	margin-right: 1%;
-}
-.picture5 {
-		float: right;
-}
-.picture6 {
-		float: left;
-	margin-right: 1%;
+float: right;
+margin-right: 4%;
+margin-top: 10%;
+clear: all;
 }
 .conductorPhoto {
 float: left;
@@ -189,38 +151,13 @@ font-size: 150%;
 color: yellow;
 text-align: top;
 }
-.fb-page {
-	margin-left: 75%;
-	border: thick solid #FFAE00;
-	position: absolute;
-	left: 1em;
-	top: 5em;
-}
-.come_join {
-	position: absolute;
-	top: 5em;
-	left: 2em;
-}
-#left_panel {
-	display: block;
-	float: left;
-	margin-left: 1em;
-	width: 45%;
-	clear: right;
-}
 
-#right_side {
-	display: block;
-	float: right;
-	margin-left: 1em;
-	width: 38%;
-}
 .benefactorsList {
 	font-family: helvetica, arial, sans-serif;
 	font-size: 150%;
 	margin-left: 4%;
-	margin-top: 1%;
-	margin-bottom: 1%;
+	margin-top: 2%;
+	margin-bottom: 3%;
 	padding: 0%;
 	color: white;
 	width: 40%;
@@ -232,10 +169,10 @@ text-align: top;
 	font-size: 150%;
 	margin-left: 45%;
 	margin-top: 1%;
-	margin-bottom: 1%;
+	margin-bottom: 3%;
 	padding-right: 3%;
 	color: white;
-	width: 40%;
+	width: 50%;
 	float: top;
 }
 .imgborder {
@@ -246,7 +183,14 @@ legend {
 	font-size: 100%;
 	color: white;
 }
-
+.wrapper {
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+font-size: 120%;
+font-family: helvetica, arial, sans-serif;
+color: white;
+}
 .form_wrapper {					<!--Below relates to the Forms-->
 width: 80%;
 margin: 20px auto 40px auto;
@@ -295,5 +239,4 @@ margin-right: 13px;
 form div.submit {
 text-align: right;
 }
-
 {/style}

@@ -1,16 +1,6 @@
 <style type="text/css">
-
-
-#wrapper{width:100%;}
-#wrapper2{width:90%;}
-#text1{width:75%; float:left; left:20%;}
-.wrapper {
-width: 90%;
-margin-left: auto;
-margin-right: auto;
-font-size: 120%;
-font-family: helvetica, arial, sans-serif;
-color: white;
+html{
+	
 }
 
 body {
@@ -18,22 +8,30 @@ body {
 	background-color: blue;
 	color: #FCF8F8;
 	background-size: cover;
-	<!--background image covers the entire background no matter what the screen size-->
-    <!--background-attachment: fixed;-->
+background image covers the entire background no matter what the screen size
+    background-attachment: fixed;
+
+}
+
+@media only screen and (min-width:768px){
+	/* css for 768 pixel width devices and wider goes here */
+}
+@media only screen and (min-width:992px){
+	/* css for 992 pixel width devices and wider goes here */
 }
 .nav {
-	list-style: none;   <!--removes list bullets, margins and padding-->
-	margin: 20%;
+	list-style: none;
+		margin-left: 20%;
 }
 .nav li{
-	float: left;      <!--display menu items beside each other rather than under each other-->
+	float: left;      display menu items beside each other rather than under each other
 	min-width: 8em;
 	margin-right: 2%;
 	text-align: centre;
 }
 .nav li a:link,
 .nav li a:visited {
-	background-color: yellow;   <!--makes navigation box-like with rounded corners and drop shadows-->
+	background-color: yellow;   makes navigation box-like with rounded corners and drop shadows
 	color: black;
 	display: block;
 	padding: 0.2em;
@@ -41,22 +39,34 @@ body {
 	font-weight: bold;
 	margin: 0 0 0.2em 0;
 	border-radius: 3px;
+	/*moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);
+	-moz-box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);*/
 	box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5); 
 }
 .nav li a:hover {				/*makes mousing over navigation box highlight it*/
 	background-color: red;
 	color: white;
+		background-color: yellow;   makes navigation box-like with rounded corners and drop shadows
+	color: black;
+	display: block;
+	padding: 0.2em;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 0 0.2em 0;
+	border-radius: 3px;
+	/*moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);
+	-moz-box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);*/
+	box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5); 
 }
+
 .header {
 	width : 100%;
 }
-.conductor {
-font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
-font-size: 120%;
-margin-right: 3%;
-margin-bottom: 0%;
-color: yellow;
-}
+
 .conductor1 {
 font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 font-size: 200%;
@@ -64,11 +74,6 @@ margin-right: 3%;
 margin-bottom: 0%;
 color: yellow;
 }
-
-#footer{clear:both; width:100%; float:right; background-color:yellow; position:fixed; bottom:0;}
-#footer1{clear:both; width:100%; float: left; background-color:yellow; bottom:0:}
-
-.footer{padding-left:1em; font-family:verdana; color:black;}
 
 h1 {
 font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
@@ -83,85 +88,100 @@ h2 {
 	font-size: 200%;
 	margin-right: 0%;
 	color: #FFEF1D;
+	border: ; 
 	text-align: center;
 }
 h3 {
 	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 	font-size: 250%;
-	margin-bottom: 2%;
+	margin-left: 20%;
+	margin-bottom: 5%;
 	color: White;
+	clear: all;
+	text-align: center;
 }
 h4 {
 	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 	font-size: 250%;
-	margin-left: 3%;
+	margin-left: 15%;
 	margin-top: 0%;
 	margin-bottom: 0%;
 	color: White;
 	left: 142px;
+	text-decoration: underline;
 }
 h5 {
 	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 	font-size: 250%;
-	margin-left: 3%;
+	margin-left: 15%;
 	margin-top: 0%;
 	margin-bottom: 0%;
 	color: white;
 	left: 142px;
+	text-decoration: underline;
 }
 h6 {
 	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
 	font-size: 250%;
-	margin-left: 5%;
+	margin-left: 15%;
 	margin-top: 0%;
-	margin-bottom: 2%;
+	margin-bottom: 0%;
 	color: white;
-	
+	left: 142px;
+	text-decoration: underline;
 }
-.names {
+names {
 		color: Gold;
 }
-p{
+
+text{
 	font-family: helvetica, arial, sans-serif;
-	margin-left: 4%;
+	margin-left: 1%;
+	color: white;
+	border: solid 1em;
 	padding-right: 4%;
 }
+
 .address {
 	font-family: helvetica, arial, sans-serif;
 	margin-left: 10%;
 	margin-top: -2%;
-	margin-bottom: 1%;
+	margin-bottom: 3%;
 	padding: 0%;
 	color: white;
 	width: 70%;
 }
-#photo1{width:25%; float:right;}
+.Content2 {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 0%;
+	font-size: 130%;
+	font-family: helvetica, arial, sans-serif;
+	color: white;
+}
+.Content3 {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 0%;
+	font-size: 140%;
+	font-family: helvetica, arial, sans-serif;
+	color: white;
+}
 .picture1 {
 float: left;
 margin-top: 0%;
+
 }
 .picture2 {
-	float: left;
+	float: right;
 	margin-right: 4%;
-	margin-top: 0%;
+	margin-top: 10%;
 	clear: all;
 	border: thick solid #FFAE00;
 }
-.tickets {
-	float: left;
-	margin-right: 2%;
-	margin-top: 0%;
-	padding: 2%;
+.fb-page {
+	margin-left: 75%;
 	clear: all;
-	border: thick solid gold;
-}
-.ticket {
-	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
-	font-size: 200%;
-	color: #FFFFFF;
-	margin-left: 5%;
-	padding: 2%;
-	text-align: center;
 }
 .picture3 {
 		float: right;
@@ -177,50 +197,21 @@ margin-top: 0%;
 		float: left;
 	margin-right: 1%;
 }
-.conductorPhoto {
-float: left;
-margin-left: 0%;
-margin-top: 1.5%;
-margin-right: 1%;
-}
 .caption {
-font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
-font-size: 150%;
-color: yellow;
-text-align: top;
-}
-.fb-page {
-	margin-left: 75%;
-	border: thick solid #FFAE00;
-	position: absolute;
-	left: 1em;
-	top: 5em;
-}
-.come_join {
-	position: absolute;
-	top: 5em;
-	left: 2em;
-}
-#left_panel {
-	display: block;
-	float: left;
-	margin-left: 1em;
-	width: 45%;
-	clear: right;
+	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
+	font-size: 150%;
+	color: #FFFFFF;
+	margin-left: 2%;
+	text-align: center;
+
 }
 
-#right_side {
-	display: block;
-	float: right;
-	margin-left: 1em;
-	width: 38%;
-}
 .benefactorsList {
 	font-family: helvetica, arial, sans-serif;
 	font-size: 150%;
 	margin-left: 4%;
-	margin-top: 1%;
-	margin-bottom: 1%;
+	margin-top: 2%;
+	margin-bottom: 3%;
 	padding: 0%;
 	color: white;
 	width: 40%;
@@ -232,32 +223,29 @@ text-align: top;
 	font-size: 150%;
 	margin-left: 45%;
 	margin-top: 1%;
-	margin-bottom: 1%;
-	padding-right: 3%;
+	margin-bottom: 3%;
+	padding-right: 2%;
 	color: white;
-	width: 40%;
+	width: 50%;
 	float: top;
 }
 .imgborder {
 	border: 2px solid #000;
-	margin: 1%;
 }
 legend {
 	font-size: 100%;
 	color: white;
 }
-
-.form_wrapper {					<!--Below relates to the Forms-->
-width: 80%;
-margin: 20px auto 40px auto;
+.wrapper {
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+font-size: 120%;
+font-family: helvetica, arial, sans-serif;
+color: white;
 }
-.submit  {
-width: 100px;
-float: right;
-}
-form {				
-width: 400px;
-margin: 0 0 0 10em;
+form {				Below relates to the Forms
+width: 60%;
 }
 form div {
 float: left;
@@ -268,13 +256,13 @@ form label {
 float: left;
 width: 120px;
 }
-form textarea, form input {  <!--:not([type="submit"])-->
+form textarea, form input:not([type="submit"]) {
 float: right;
 width: 260px;
 }
-<!--fieldset:hover {
+fieldset:hover {
 background-color: rgba(126,208,214,0.5);
-}-->
+}
 form input[type="text"]:hover {
 background-color: rgba(126,208,214,0.5);
 }
@@ -287,13 +275,19 @@ background-color: rgba(126,208,214,0.5);
 form input[type="submit"]:hover {
 background-color: rgba(126,208,214,0.5);
 }
-form input[type="submit"]{
-float: right;
-width: 60px;
-margin-right: 13px;
-}
-form div.submit {
-text-align: right;
-}
 
+.tickets {
+	float: right;
+	margin-right: 4%;
+	margin-top: 0%;
+	clear: all;
+	border: thick solid gold;
+}
+.ticket {
+	font-family: Raleway, Cambria, MS Gothic, Candara, Tahoma, sans-serif;
+	font-size: 150%;
+	color: #FFFFFF;
+	margin-left: 8%;
+	text-align: center;
+}
 {/style}
